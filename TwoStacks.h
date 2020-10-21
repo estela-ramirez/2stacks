@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <stdexcept>
 
+
 template <class T>
 class TwoStacks {
   public:
@@ -29,6 +30,10 @@ class TwoStacks {
   // Return the size of the second stack
   size_t size_second() const ;
 
+  void printStacks();
+  
+  void doubleSize();
+
   // Return true if the first stack is empty
   bool empty_first() const { return size_first() == 0; }
 
@@ -39,6 +44,7 @@ class TwoStacks {
   size_t size_;
   T *array_;
 
-  int firstTop = 0;
-  int secondTop = size_ -1;
+  int firstCount = 0;
+  int secondCount = 0;
+  
 };
