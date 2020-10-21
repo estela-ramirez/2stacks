@@ -1,6 +1,12 @@
+# include "TwoStacks.h"
+
 #include <iostream>
 #include <string>
 
 int main(){
-  return 0;
- }
+  size_t a = 12;
+  TwoStacks<size_t>s(a);    
+
+  
+  
+}
